@@ -35,13 +35,13 @@
 
   <p style="font-size: 20px;">
     {% if common|length == 0 %}
-      😢 Nenhum filme em comum...
+      😢 Nenhum filme em comum... hora de expandir os gostos ou combinar algo novo!
     {% elif common|length <= 3 %}
-      🤔 Poucos filmes em comum!
+      🤔 Alguns filmes em comum — já é um começo! Que tal explorar juntos?
     {% elif common|length <= 10 %}
-      😃 Boa compatibilidade!
+      😃  Muitos filmes em comum! Vocês têm gostos parecidos, hein?
     {% else %}
-      🔥 Altíssima compatibilidade!
+      🔥 Vocês têm MUITOS filmes em comum! Perfeitos pra uma maratona juntos!
     {% endif %}
   </p>
 
