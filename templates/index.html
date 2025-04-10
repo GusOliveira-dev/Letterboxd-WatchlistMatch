@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Watchlist Em Comum 🎬</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+  <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</head>
+<body>
+    
+    <!--logo e apresentação-->
+   <h1 style="text-align: center; font-size: 36px;">
+    <span style="color: #f47b20;">●</span>
+    <span style="color: #62bf4e;">●</span>
+    <span style="color: #00aaff;">●</span>
+    <span style="color: #f1f5f2; margin-left: 10px;">WatchlistMatch</span>
+  </h1>
+
+  <p style="text-align: center; margin-bottom: 25px;">
+    Informe apenas os nomes de usuário no letterboxdabaixo para verificar quais filmes ambos têm em suas watchlists.
+  </p>
+
+  <!--formulário para comparação e botão-->
+  <form method="post">
+    <input type="text" name="user1" placeholder="olivvas_" required> 
+    <input type="text" name="user2" placeholder="flanaganfilm" required> 
+    <button type="submit" style="background-color: #00aaff; font-size: 17px; font-weight: bold; border-radius: 8px;">
+      🤞 Comparar Watchlists
+    </button>
+  </form>
+
+    <!--comparação se têm filmes e comum e grau de compatibilidade-->
+  {% if common is not none %}
+  <h2>🎞️ Filmes em comum: {{ common | length }}</h2>
+
+  <p style="font-size: 20px;">
+    {% if common|length == 0 %}
+      😢 Nenhum filme em comum...
+    {% elif common|length <= 3 %}
+      🤔 Poucos filmes em comum!
+    {% elif common|length <= 10 %}
+      😃 Boa compatibilidade!
+    {% else %}
+      🔥 Altíssima compatibilidade!
+    {% endif %}
+  </p>
+
+  {% if common|length > 0 %}
+    <!--carrossel dos filmes-->
+    <div class="carousel-container">
+      <div class="carousel" id="carousel">
+        {% for movie in common %}
+          <div class="carousel-item">
+            <img src="{{ movie.img }}" alt="{{ movie.title }}">
+            <p>{{ movie.title }}</p>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="carousel-buttons">
+        <button id="prev">&#8592;</button>
+        <button id="next">&#8594;</button>
+      </div>
+    </div>
+    {% if highlight %}
+  <div style="margin-top: 30px; text-align: center;">
+    <h2>🎯 Escolhido para hoje:</h2>
+    <div style="display: inline-block; background-color: #1e1e1e; padding: 15px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+      <img src="{{ highlight.img }}" alt="{{ highlight.title }}" style="width: 150px; border-radius: 6px;"><br>
+      <strong style="font-size: 18px;">{{ highlight.title }}</strong>
+    </div>
+  </div>
+{% endif %}
+  {% endif %}
+{% endif %}
+
+
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+
+
+
+<footer>
+    <p>
+      &copy; 2025 -
+      <a href="https://github.com/GusOliveira-dev" target="_blank" rel="noopener noreferrer">
+        Gustavo Oliveira
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>
