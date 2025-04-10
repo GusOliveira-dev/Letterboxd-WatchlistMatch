@@ -2,7 +2,8 @@
 
 🌐 Acesse: [watchlistmatch.onrender.com](https://watchlistmatch.onrender.com)
 
-**WatchlistMatch** é uma aplicação web que compara dois perfis do [Letterboxd](https://letterboxd.com/) e exibe os filmes em comum na suas watchlists. Ideal para descobrir afinidades com amigos, parceiros ou simplesmente escolher um filme quando rolar uma indecisão.
+**WatchlistMatch** é uma aplicação web que compara dois perfis do [Letterboxd](https://letterboxd.com/) e exibe os filmes em comum na suas watchlists. Ideal para descobrir aqueles filmes que quer ver com os amigos/parceiros ou simplesmente escolher um filme quando rolar uma indecisão.
+
 Inicialmente apenas um estudo, pensando em trazer mais funcionalidades.
 
 
