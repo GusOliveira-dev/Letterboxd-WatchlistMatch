@@ -1,18 +1,15 @@
-# 🎬 WatchlistMatch
-
-🌐 Acesse: [watchlistmatch.onrender.com](https://watchlistmatch.onrender.com)
+## 🟠 🟢 🔵 &nbsp;&nbsp; **WatchlistMatch**
 
 **WatchlistMatch** é uma aplicação web que compara dois perfis do [Letterboxd](https://letterboxd.com/) e exibe os filmes em comum na suas watchlists. Ideal para descobrir aqueles filmes que quer ver com os amigos/parceiros ou simplesmente escolher um filme quando rolar uma indecisão.
 
 Inicialmente apenas um estudo, pensando em trazer mais funcionalidades.
 
+🌐 Acesse: [watchlistmatch.onrender.com](https://watchlistmatch.onrender.com)
 
-## 🔍 Funcionalidades
 
-- 🔎 **Comparação de usuários no Letterboxd**
-- 🎞️ **Carrossel com os filmes na watchlist em comum**
-- 📊 **Indicador de quantos filmes em comum**
-- 🎯 **Filme do Destino**: sorteia um filme da lista em comum como sugestão especial
+## Funcionalidades:
+- 🎞️ **Amostra dos filmes na watchlist em comum**
+- 🎯 **Filme do dia**: sorteia um filme da lista em comum como sugestão
 
 
 ## 💻 Tecnologias Utilizadas:
@@ -41,7 +38,7 @@ Inicialmente apenas um estudo, pensando em trazer mais funcionalidades.
 -[TMDB](https://www.themoviedb.org/), para pôsters e metadados dos filmes
 
 ### Hospedagem
-- ☁️ **Render** – Hospedagem gratuita
+- ☁️ **Render** – Hospedagem gratuita, caso queira testar e esteja fora do ar, me mande uma mensagem para reiniciar o serviço.
 
 ![image](https://github.com/user-attachments/assets/9a7a3127-069f-43c5-b5ab-630448ff2411)
 
